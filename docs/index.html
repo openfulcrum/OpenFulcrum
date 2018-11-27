@@ -1,0 +1,255 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>OpenFulcrum 0.1</title>
+
+    <style>
+    </style>
+    <link rel="stylesheet" media="screen" href="pub/css/screen.css">
+    <link rel="stylesheet" media="screen" href="pub/css/screen_overrides.css">
+    <link rel="stylesheet" media="print" href="pub/css/print.css">
+    <link rel="stylesheet" media="print" href="pub/css/print_overrides.css">
+    <link rel="stylesheet" media="screen" href="pub/css/darkula.css">
+    <link rel="stylesheet" media="screen" href="pub/css/theme_overrides.css">
+    
+      <script src="pub/js/shins.js"></script>
+
+    
+    <meta name="theme-color" content="#F3F7F9" />
+
+  </head>
+
+  <body data-languages="[&quot;shell&quot;,&quot;http&quot;,&quot;javascript&quot;,&quot;javascript--nodejs&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="source/images/navbar.png" class="undefined" alt="Navigation">
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="source/images/logo.png" class="logo" alt="Logo">
+      
+        <div class="lang-selector">
+          
+            
+              <a href="#" data-language-name="shell">Shell</a>
+            
+          
+            
+              <a href="#" data-language-name="http">HTTP</a>
+            
+          
+            
+              <a href="#" data-language-name="javascript">JavaScript</a>
+            
+          
+            
+              <a href="#" data-language-name="javascript--nodejs">Node.JS</a>
+            
+          
+        </div>
+      
+      
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      
+      <div id="toc" class="toc-list-h1">
+	  	<ul class="toc-list-h1">
+        
+          <li>
+            <a href="#openfulcrum" class="toc-h1 toc-link" data-title="The OpenFulcrum API">The OpenFulcrum API</a>
+            
+          </li>
+        
+          <li>
+            <a href="#openfulcrum-openinvest" class="toc-h1 toc-link" data-title="OpenInvest">OpenInvest</a>
+            
+              <ul class="toc-list-h2">
+                
+                  <li>
+                    <a href="#readisa" class="toc-h2 toc-link" data-title="ReadISA">ReadISA</a>
+                    
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="#openfulcrum-openpension" class="toc-h1 toc-link" data-title="OpenPension">OpenPension</a>
+            
+          </li>
+        
+          <li>
+            <a href="#openfulcrum-openinsurance" class="toc-h1 toc-link" data-title="OpenInsurance">OpenInsurance</a>
+            
+          </li>
+        
+		</ul>
+      </div>
+      
+        <ul class="toc-footer">
+          
+            <li></li>
+          
+        </ul>
+      
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id="openfulcrum">The OpenFulcrum API</h1>
+<blockquote>
+<p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
+</blockquote>
+<p>OpenFulcrum is a set of open APIs for financial products.</p>
+<h1 id="openfulcrum-openinvest">OpenInvest</h1>
+<p>Open APIs for investment</p>
+<blockquote>
+<p>Installation</p>
+</blockquote>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># install with npm</span>
+npm install openinvest
+
+</code></pre>
+<h2 id="readisa">ReadISA</h2>
+<p><a id="readISA"></a></p>
+<blockquote>
+<p>Code samples</p>
+</blockquote>
+<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
+curl -X POST http://petstore.swagger.io/v2/pet \
+  -H <span class="hljs-string">'Content-Type: application/json'</span> \
+  -H <span class="hljs-string">'Authorization: Bearer {access-token}'</span>
+
+</code></pre>
+<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">http://petstore.swagger.io/v2/pet</span> HTTP/1.1
+<span class="hljs-attribute">Host</span>: petstore.swagger.io
+<span class="hljs-attribute">Content-Type</span>: application/json
+
+<span class="undefined"></span></code></pre>
+<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">var</span> headers = {
+  <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>,
+  <span class="hljs-string">'Authorization'</span>:<span class="hljs-string">'Bearer {access-token}'</span>
+
+};
+
+$.ajax({
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'http://petstore.swagger.io/v2/pet'</span>,
+  <span class="hljs-attr">method</span>: <span class="hljs-string">'post'</span>,
+
+  <span class="hljs-attr">headers</span>: headers,
+  <span class="hljs-attr">success</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(data));
+  }
+})
+
+</code></pre>
+<pre class="highlight tab tab-javascript--nodejs"><code><span class="hljs-keyword">const</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-fetch'</span>);
+<span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">'{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}'</span>;
+<span class="hljs-keyword">const</span> headers = {
+  <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>,
+  <span class="hljs-string">'Authorization'</span>:<span class="hljs-string">'Bearer {access-token}'</span>
+
+};
+
+fetch(<span class="hljs-string">'http://petstore.swagger.io/v2/pet'</span>,
+{
+  <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
+  <span class="hljs-attr">body</span>: inputBody,
+  <span class="hljs-attr">headers</span>: headers
+})
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-keyword">return</span> res.json();
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(body);
+});
+
+</code></pre>
+<p><code>POST /readISA</code></p>
+<p><em>Get list of ISAs</em></p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"category"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>
+  },
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"doggie"</span>,
+  <span class="hljs-attr">"photoUrls"</span>: [
+    <span class="hljs-string">"string"</span>
+  ],
+  <span class="hljs-attr">"tags"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>
+    }
+  ],
+  <span class="hljs-attr">"status"</span>: <span class="hljs-string">"available"</span>
+}
+</code></pre>
+<h1 id="openfulcrum-openpension">OpenPension</h1>
+<p>Coming soon...</p>
+<blockquote>
+<p>OpenPension coming soon</p>
+</blockquote>
+<h1 id="openfulcrum-openinsurance">OpenInsurance</h1>
+<p>Coming soon...</p>
+<blockquote>
+<p>OpenInsurance coming soon</p>
+</blockquote>
+
+      </div>
+      <div class="dark-box">
+        
+          <div class="lang-selector">
+            
+              
+                <a href="#" data-language-name="shell">Shell</a>
+              
+            
+              
+                <a href="#" data-language-name="http">HTTP</a>
+              
+            
+              
+                <a href="#" data-language-name="javascript">JavaScript</a>
+              
+            
+              
+                <a href="#" data-language-name="javascript--nodejs">Node.JS</a>
+              
+            
+          </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
