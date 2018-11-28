@@ -1,255 +1,281 @@
-
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>OpenFulcrum 0.1</title>
 
-    <style>
-    </style>
-    <link rel="stylesheet" media="screen" href="pub/css/screen.css">
-    <link rel="stylesheet" media="screen" href="pub/css/screen_overrides.css">
-    <link rel="stylesheet" media="print" href="pub/css/print.css">
-    <link rel="stylesheet" media="print" href="pub/css/print_overrides.css">
-    <link rel="stylesheet" media="screen" href="pub/css/darkula.css">
-    <link rel="stylesheet" media="screen" href="pub/css/theme_overrides.css">
-    
-      <script src="pub/js/shins.js"></script>
-
-    
-    <meta name="theme-color" content="#F3F7F9" />
-
-  </head>
-
-  <body data-languages="[&quot;shell&quot;,&quot;http&quot;,&quot;javascript&quot;,&quot;javascript--nodejs&quot;]">
-    <a href="#" id="nav-button">
-      <span>
-        NAV
-        <img src="source/images/navbar.png" class="undefined" alt="Navigation">
-      </span>
-    </a>
-    <div class="toc-wrapper">
-      <img src="source/images/logo.png" class="logo" alt="Logo">
-      
-        <div class="lang-selector">
-          
-            
-              <a href="#" data-language-name="shell">Shell</a>
-            
-          
-            
-              <a href="#" data-language-name="http">HTTP</a>
-            
-          
-            
-              <a href="#" data-language-name="javascript">JavaScript</a>
-            
-          
-            
-              <a href="#" data-language-name="javascript--nodejs">Node.JS</a>
-            
-          
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>Graphql schema documentation</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+				<!--<a href="https://www.legalandgeneral.com/" target="_blank" style="display:block;padding:0.01rem 20%"><img src="./images/dark-logo.png"/></a>-->
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="QueryType">
+            <a href="querytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QueryType
+            </a>
+        </li>
+        <li  title="MutationType">
+            <a href="mutationtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MutationType
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Date">
+            <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Date
+            </a>
+        </li>
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="CardPaymentStatus">
+            <a href="cardpaymentstatus.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CardPaymentStatus
+            </a>
+        </li>
+        <li  title="CollectionStartDayType">
+            <a href="collectionstartdaytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CollectionStartDayType
+            </a>
+        </li>
+        <li  title="DateFrequency">
+            <a href="datefrequency.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DateFrequency
+            </a>
+        </li>
+        <li  title="Outcome">
+            <a href="outcome.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Outcome
+            </a>
+        </li>
+        <li  title="PersonalInvestmentAudienceType">
+            <a href="personalinvestmentaudiencetype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PersonalInvestmentAudienceType
+            </a>
+        </li>
+        <li  title="PersonalInvestmentOrderWrapperType">
+            <a href="personalinvestmentorderwrappertype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PersonalInvestmentOrderWrapperType
+            </a>
+        </li>
+        <li  title="PreferredCommunication">
+            <a href="preferredcommunication.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PreferredCommunication
+            </a>
+        </li>
+        <li  title="RegularPaymentType">
+            <a href="regularpaymenttype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                RegularPaymentType
+            </a>
+        </li>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="OrderResponse">
+            <a href="orderresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrderResponse
+            </a>
+        </li>
+        <li  title="PersonalInvestmentFund">
+            <a href="personalinvestmentfund.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PersonalInvestmentFund
+            </a>
+        </li>
+        <li  title="PersonalInvestmentOrderCardPaymentStatusResponse">
+            <a href="personalinvestmentordercardpaymentstatusresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PersonalInvestmentOrderCardPaymentStatusResponse
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="AddressInput">
+            <a href="addressinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AddressInput
+            </a>
+        </li>
+        <li  title="CustomerNameInput">
+            <a href="customernameinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CustomerNameInput
+            </a>
+        </li>
+        <li  title="CustomerPersonalDetailsInput">
+            <a href="customerpersonaldetailsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CustomerPersonalDetailsInput
+            </a>
+        </li>
+        <li  title="DirectDebitBankDetailsInput">
+            <a href="directdebitbankdetailsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DirectDebitBankDetailsInput
+            </a>
+        </li>
+        <li  title="FundInvestmentInput">
+            <a href="fundinvestmentinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FundInvestmentInput
+            </a>
+        </li>
+        <!--<li  title="LegalAndGeneralAffiliationInput">
+            <a href="legalandgeneralaffiliationinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LegalAndGeneralAffiliationInput
+            </a>
+        </li>-->
+        <li  title="MandateBankDetailsInput">
+            <a href="mandatebankdetailsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MandateBankDetailsInput
+            </a>
+        </li>
+        <li  title="PersonalInvestmentOrderInput">
+            <a href="personalinvestmentorderinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PersonalInvestmentOrderInput
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+    </ul>
+</div>
         </div>
-      
-      
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
         </div>
-        <ul class="search-results"></ul>
-      
-      <div id="toc" class="toc-list-h1">
-	  	<ul class="toc-list-h1">
-        
-          <li>
-            <a href="#openfulcrum" class="toc-h1 toc-link" data-title="The OpenFulcrum API">The OpenFulcrum API</a>
-            
-          </li>
-        
-          <li>
-            <a href="#openfulcrum-openinvest" class="toc-h1 toc-link" data-title="OpenInvest">OpenInvest</a>
-            
-              <ul class="toc-list-h2">
-                
-                  <li>
-                    <a href="#readisa" class="toc-h2 toc-link" data-title="ReadISA">ReadISA</a>
-                    
-                  </li>
-                
-              </ul>
-            
-          </li>
-        
-          <li>
-            <a href="#openfulcrum-openpension" class="toc-h1 toc-link" data-title="OpenPension">OpenPension</a>
-            
-          </li>
-        
-          <li>
-            <a href="#openfulcrum-openinsurance" class="toc-h1 toc-link" data-title="OpenInsurance">OpenInsurance</a>
-            
-          </li>
-        
-		</ul>
-      </div>
-      
-        <ul class="toc-footer">
-          
-            <li></li>
-          
-        </ul>
-      
+        </div>
     </div>
-    <div class="page-wrapper">
-      <div class="dark-box"></div>
-      <div class="content">
-        <h1 id="openfulcrum">The OpenFulcrum API</h1>
-<blockquote>
-<p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
-</blockquote>
-<p>OpenFulcrum is a set of open APIs for financial products.</p>
-<h1 id="openfulcrum-openinvest">OpenInvest</h1>
-<p>Open APIs for investment</p>
-<blockquote>
-<p>Installation</p>
-</blockquote>
-<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># install with npm</span>
-npm install openinvest
-
-</code></pre>
-<h2 id="readisa">ReadISA</h2>
-<p><a id="readISA"></a></p>
-<blockquote>
-<p>Code samples</p>
-</blockquote>
-<pre class="highlight tab tab-shell"><code><span class="hljs-comment"># You can also use wget</span>
-curl -X POST http://petstore.swagger.io/v2/pet \
-  -H <span class="hljs-string">'Content-Type: application/json'</span> \
-  -H <span class="hljs-string">'Authorization: Bearer {access-token}'</span>
-
-</code></pre>
-<pre class="highlight tab tab-http"><code><span class="hljs-keyword">POST</span> <span class="hljs-string">http://petstore.swagger.io/v2/pet</span> HTTP/1.1
-<span class="hljs-attribute">Host</span>: petstore.swagger.io
-<span class="hljs-attribute">Content-Type</span>: application/json
-
-<span class="undefined"></span></code></pre>
-<pre class="highlight tab tab-javascript"><code><span class="hljs-keyword">var</span> headers = {
-  <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>,
-  <span class="hljs-string">'Authorization'</span>:<span class="hljs-string">'Bearer {access-token}'</span>
-
-};
-
-$.ajax({
-  <span class="hljs-attr">url</span>: <span class="hljs-string">'http://petstore.swagger.io/v2/pet'</span>,
-  <span class="hljs-attr">method</span>: <span class="hljs-string">'post'</span>,
-
-  <span class="hljs-attr">headers</span>: headers,
-  <span class="hljs-attr">success</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(data));
-  }
-})
-
-</code></pre>
-<pre class="highlight tab tab-javascript--nodejs"><code><span class="hljs-keyword">const</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-fetch'</span>);
-<span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">'{
-  "id": 0,
-  "category": {
-    "id": 0,
-    "name": "string"
-  },
-  "name": "doggie",
-  "photoUrls": [
-    "string"
-  ],
-  "tags": [
-    {
-      "id": 0,
-      "name": "string"
-    }
-  ],
-  "status": "available"
-}'</span>;
-<span class="hljs-keyword">const</span> headers = {
-  <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>,
-  <span class="hljs-string">'Authorization'</span>:<span class="hljs-string">'Bearer {access-token}'</span>
-
-};
-
-fetch(<span class="hljs-string">'http://petstore.swagger.io/v2/pet'</span>,
-{
-  <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
-  <span class="hljs-attr">body</span>: inputBody,
-  <span class="hljs-attr">headers</span>: headers
-})
-.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
-    <span class="hljs-keyword">return</span> res.json();
-}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">body</span>) </span>{
-    <span class="hljs-built_in">console</span>.log(body);
-});
-
-</code></pre>
-<p><code>POST /readISA</code></p>
-<p><em>Get list of ISAs</em></p>
-<blockquote>
-<p>Body parameter</p>
-</blockquote>
-<pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-  <span class="hljs-attr">"category"</span>: {
-    <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>
-  },
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"doggie"</span>,
-  <span class="hljs-attr">"photoUrls"</span>: [
-    <span class="hljs-string">"string"</span>
-  ],
-  <span class="hljs-attr">"tags"</span>: [
-    {
-      <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"string"</span>
-    }
-  ],
-  <span class="hljs-attr">"status"</span>: <span class="hljs-string">"available"</span>
-}
-</code></pre>
-<h1 id="openfulcrum-openpension">OpenPension</h1>
-<p>Coming soon...</p>
-<blockquote>
-<p>OpenPension coming soon</p>
-</blockquote>
-<h1 id="openfulcrum-openinsurance">OpenInsurance</h1>
-<p>Coming soon...</p>
-<blockquote>
-<p>OpenInsurance coming soon</p>
-</blockquote>
-
-      </div>
-      <div class="dark-box">
+    <div class="container">
         
-          <div class="lang-selector">
-            
-              
-                <a href="#" data-language-name="shell">Shell</a>
-              
-            
-              
-                <a href="#" data-language-name="http">HTTP</a>
-              
-            
-              
-                <a href="#" data-language-name="javascript">JavaScript</a>
-              
-            
-              
-                <a href="#" data-language-name="javascript--nodejs">Node.JS</a>
-              
-            
-          </div>
-        
-      </div>
+        <h1 class="slds-text-heading--large">Graphql schema documentation</h1>
+        <div class="slds-text-body--regular"></div>
     </div>
-  </body>
-</html>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">schema</span> {</li><li></li><li><span class="tab"><span class="meta">query</span>: <a class="support type" href="querytype.doc.html">QueryType</a></span></li><li></li><li><span class="tab"><span class="meta">mutation</span>: <a class="support type" href="mutationtype.doc.html">MutationType</a></span></li><li>}</li></ul></code>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
